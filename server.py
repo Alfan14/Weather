@@ -24,7 +24,7 @@ def get_weather():
 
     if not bool(city.strip()):
         city = "Kansas City"
-    weather_data = get_current_weather('city')
+    weather_data = get_current_weather(city)
 
     #City not found by API
     if not weather_data['cod'] == 200:
